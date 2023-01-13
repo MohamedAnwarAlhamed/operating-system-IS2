@@ -1,0 +1,77 @@
+DONE BY: احمد فهد علي علاو / I.S.2 A.M /22160040 / Sana'a University
+
+
+1) Create folders and files.
+
+Q1- Creating directories :
+
+D:
+mkdir D
+cd D
+mkdir D{1..4}
+touch F1
+cd D1
+mkdir D{11..12}
+touch F11
+cd ../D2
+mkdir D21
+cd D21
+touch F211
+cd ../../D3
+mkdir D{31..33}
+cd D31
+mkdir D{311..312}
+cd ../D32
+mkdir D321
+cd ../D33
+touch F331
+cd ../../D4
+touch F41
+
+* These command pelow are after entering the directories
+
+2) Copy the file F1131 To D321.
+
+Q2-cp F1131 ../../../D3/D32/D321
+
+3) Copy the F1131 To file1.
+
+Q3-cp F1131 ../../../F1
+
+4) Copy folder contents D121 To D311 folder.
+
+Q4-cp cp * ../../../D3/D31/D311
+
+5) Copy the file F1212 and F1211 To D2 folder.
+
+Q5-cp F1211 F1212 ../../../D2
+
+6) Rename the file F1111 To FFFF.
+
+Q6-mv F1111 FFFF
+
+7) Move the files F1212 and F1211 To D4.
+
+Q7-mv F1211 F1212 ../../../D4
+
+8) Remove the file F11.
+
+Q8-rm F11
+
+9) Remove folder contents D3.
+
+Q9-rm -r *
+
+10) do soft and hard linking for file F331 in a desktop path.
+
+Q10- HARD LINKING ln F331 ../../../Desktop
+     SOFT LINKING ln -s F331 ../../../Desktop
+
+
+
+
+DONE BY: احمد فهد علي علاو / I.S.2 A.M /22160040 / Sana'a University
+
+
+
+
