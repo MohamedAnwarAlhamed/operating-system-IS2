@@ -1,0 +1,78 @@
+22160136 G2 Done BY MOHAMMED HUSSIEN RA'DAN 
+1)
+mkdir D
+cd D
+mkdir D{1..4}
+touch f1
+cd D1
+mkdir D11
+touch F11
+mkdir D12
+cd D12 
+mkdir D121
+mkdir D122
+cd D121
+touch F1212
+touch F1211
+cd ../../D11
+mkdir D113
+mkdir D112
+mkdir D111
+cd D113
+touch F1131
+cd ../D112
+touch F1121
+cd ../D111
+touch F1111
+cd ../../../D2
+mkdir D21
+cd D21
+touch F211
+cd ../../D3
+mkdir D{31..33}
+cd D31
+mkdir D311
+mkdir D312
+cd ../D32
+mkdir D321
+cd ../D33
+touch F331
+cd ../../D4
+touch F41
+┌──(kali㉿kali)-[~]
+└─$ mkdir D 
+or mkdir D{1..4}
+
+┌──(kali㉿kali)-[~/D]
+└─$ touch file
+or touch F{111..1131}
+
+┌──(kali㉿kali)-[~/D/D1/D11/D113]
+└─$ cp F1131 ../../../D3/D32/D321
+
+┌──(kali㉿kali)-[~/D/D1/D12]
+└─$ cp -r D121 ../../D3/D31/D311
+
+┌──(kali㉿kali)-[~/D/D1/D12/D121] 
+└─$ cp F1211 F1212 ../../../D4 
+
+┌──(kali㉿kali)-[~/D/D1/D11/D111]
+└─$ mv F1111 FFFF  
+
+┌──(kali㉿kali)-[~/D/D1/D12/D121] 
+└─$ mv F1211 F1212 ../../../D4 
+
+┌──(kali㉿kali)-[~/D/D1]
+└─$ rm F11       
+
+┌──(kali㉿kali)-[~/D]
+└─$ rm -r D3
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ln -s /home/kali/D/D3/D33/F331
+
+
+┌──(kali㉿kali)-[~/Desktop]
+└─$ ln /home/kali/D/D3/D33/F331
+
+Done BY MOHAMMED HUSSIEN RA'DAN
