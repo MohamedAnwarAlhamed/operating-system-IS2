@@ -1,0 +1,18 @@
+
+
+                       (Mohammed AL-namshah's homework)
+
+
+1-mkdir d{1..4}
+2-touch f{111..1131}
+3-cp f1131 ../../../d3/d32/d321
+4-cp -r d121 ../../d3/d31/d311
+5-cp f1211 f1212 ../../../d4
+6-mv f1111 ffff
+7-mv f1211 f1212 ../../../d4
+8-rm f11
+9-rm -r d3
+10-ln -s /home/ubuntu/d/d3/d33/f331
+11-ln /home/ubuntu/d/d3/d33/f331
+
+                       Think you
