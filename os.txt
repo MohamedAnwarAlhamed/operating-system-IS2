@@ -1,0 +1,90 @@
+------Rasha Al-shobati ---------------
+
+------------ Q1 --------------------
+rasha@ubuntu:~$ mkdir D
+rasha@ubuntu:~$ cd D
+rasha@ubuntu:~/D$ mkdir D1 D2 D3 D4
+rasha@ubuntu:~/D$ touch F1
+rasha@ubuntu:~/D$ cd D4
+rasha@ubuntu:~/D/D4$ touch F41
+rasha@ubuntu:~/D/D4$ cd ../D3
+rasha@ubuntu:~/D/D3$ mkdir D31 D32 D33
+rasha@ubuntu:~/D/D3$ cd D31
+rasha@ubuntu:~/D/D3/D31$ mkdir D311 D312
+rasha@ubuntu:~/D/D3/D31$ cd ../D32
+rasha@ubuntu:~/D/D3/D32$ mkdir D321
+rasha@ubuntu:~/D/D3/D32$ cd ../D33
+rasha@ubuntu:~/D/D3/D33$ touch F331
+rasha@ubuntu:~/D/D3/D33$ cd ../../D2
+rasha@ubuntu:~/D/D2$ mkdir D21
+rasha@ubuntu:~/D/D2$ cd D21
+rasha@ubuntu:~/D/D2/D21$ touch F211
+rasha@ubuntu:~/D/D2/D21$ cd ../../D1
+rasha@ubuntu:~/D/D1$ mkdir D12 D11
+rasha@ubuntu:~/D/D1$ touch F11
+rasha@ubuntu:~/D/D1$ cd D12
+rasha@ubuntu:~/D/D1/D12$ mkdir D121 D122
+rasha@ubuntu:~/D/D1/D12$ cd D121
+rasha@ubuntu:~/D/D1/D12/D121$ touch F1212 F1211
+rasha@ubuntu:~/D/D1/D12/D121$ cd ../../D11
+rasha@ubuntu:~/D/D1/D11$ mkdir D113 D112 D111
+rasha@ubuntu:~/D/D1/D11$ cd D113
+rasha@ubuntu:~/D/D1/D11/D113$ touch F1131
+rasha@ubuntu:~/D/D1/D11/D113$ cd ../D112
+rasha@ubuntu:~/D/D1/D11/D112$ touch F1121
+rasha@ubuntu:~/D/D1/D11/D112$ cd ../D111
+rasha@ubuntu:~/D/D1/D11/D111$ touch F1111
+
+
+------------ Q2 --------------------
+rasha@ubuntu:~/D/D1/D11/D111$ cd 
+rasha@ubuntu:~$ cd D/D1/D11/D113
+rasha@ubuntu:~/D/D1/D11/D113$ cp F1131 ../../../D3/D32/D321
+
+
+------------ Q3 --------------------
+rasha@ubuntu:~/D/D1/D11/D113$ cp F1131 ../../../F1
+
+
+------------ Q4 --------------------
+rasha@ubuntu:~/D/D1/D11/D113$ cd
+rasha@ubuntu:~$ cd D/D1/D12
+rasha@ubuntu:~/D/D1/D12$ cp -r D121 ../../D3/D31/D311
+
+
+------------ Q5 -------------------- 
+rasha@ubuntu:~/D/D1/D11/D113$ cd
+rasha@ubuntu:~$ cd D/D1/D12/D121
+rasha@ubuntu:~/D/D1/D12/D121$ cp F1212 F1211 ../../../D2
+
+------------ Q6 --------------------
+rasha@ubuntu:~/D/D1/D12/D121$ cd
+rasha@ubuntu:~$ cd D/D1/D11/D111
+rasha@ubuntu:~/D/D1/D11/D111$ mv F1111 FFFF
+
+------------ Q7 --------------------
+rasha@ubuntu:~/D/D1/D11/D111$ cd 
+rasha@ubuntu:~$ cd D/D1/D12/D121
+rasha@ubuntu:~/D/D1/D12/D121$ mv F1212 F1211 ../../../D4
+
+
+------------ Q8 --------------------
+rasha@ubuntu:~/D/D1/D12/D121$ cd
+rasha@ubuntu:~$  cd D/D1
+rasha@ubuntu:~/D/D1$ rm F11
+
+
+------------ Q9 --------------------
+rasha@ubuntu:~/D/D3$ cd
+rasha@ubuntu:~$ cd D
+rasha@ubuntu:~/D$ rm -R D3
+
+------------ Q10 --------------------
+rasha@ubuntu:~/D$ cd 
+rasha@ubuntu:~$ cd D/D3/D33
+----- Softlink -------
+rasha@ubuntu:~/D/D3/D33$ ln -s F331 ../../../Desktop
+----- hardlink -------
+rasha@ubuntu:~/D/D3/D33$ ln F331 ../../../Desktop
+
+ 
