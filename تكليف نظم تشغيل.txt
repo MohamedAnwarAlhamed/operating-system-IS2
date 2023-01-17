@@ -1,0 +1,79 @@
+1)
+mkdir D
+cd D
+mkdir D1
+mkdir D2
+mkdir D3
+mkdir D4
+touch F1
+cd D1
+mkdir D12
+touch F11
+mkdir D11
+cd D12
+mkdir D121
+mkdir D122
+cd D121
+touch F1212
+touch F1211
+cd D11
+mkdir D113
+mkdir D112
+mkdir D111
+cd D113
+touch F1131
+cd ../D112
+touch F1121
+cd ../D111
+touch F1111
+cd ../../..
+cd D2
+mkdir D21
+cd D21
+touch F211
+cd ../../D3
+mkdir D31
+mkdir D32
+mkdir D33
+cd D31
+mkdir D311
+mkdir D312
+cd ../D32
+mkdir D321
+cd ../D33
+touch F331
+cd ../../D4
+touch F41
+
+2)
+cp D1/D11/D113/F1131 D3/D32/D321
+
+3)
+cp F1131 ../../../F1
+
+4)
+cp F1212 F1211 ../../../D3/D31/D311
+
+5)
+
+cp -r F1212 F1211 ../../../D2
+
+6)
+mv F1111 FFFF
+
+7)
+
+mv F1212 F1211 ../../../D4
+
+8)
+
+rm F11
+
+9)
+
+rm -rf D3/
+
+10)
+
+ln F331 ../../../Desktop
+ln -s F331 ../../../Desktop
