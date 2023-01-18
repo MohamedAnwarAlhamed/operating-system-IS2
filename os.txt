@@ -1,0 +1,13 @@
+Hassan thabet mohammed homadi 21_16_0128
+الفاصلة ليست من الأوامر (تفصل بين أمر وأمر)
+1-	mkdir d, cd d, mkdir d{1..4}, touch f1.txt, touch d4/f41, mkdir d3/d{31..33}, touch d3/d33/f331, mkdir d3/d32/d321, mkdir d3/d31/d{311..312}, mkdir d2/d21, touch d2/d21/f211.txt , mkdir d1/d{11..12}, touch d1/f11.txt, mkdir d1/d11/d{111..113}, touch d1/d11/d111/f1111.txt, touch d1/d11/d112/f1121.txt  , touch d1/d11/d113/f1131.txt  ,  mkdir d1/d12/d{121..122}, touch d1/d12/d121/f{1211..1212}.txt , 
+2-	cp d1/d11/d112/f1121  d3/d32/d321
+3-	cp d1/d11/d112/f1121  f1 
+4-	cp –r d1/d12/d121  d3/d31/d311
+5-	cp d1/d12/d121/f1212  d1/d12/d121/f1212  d2
+6-	  mv d1/d11/d111/f1111  ffff
+7-	mv d1/d12/d121/f1211  d1/d12/d121/f1211  d4
+8-	rm d1/f11
+9-	rm –rf d3
+10-	ln  d3/d33/f331  ../Desktop  , ln -s d3/d33/f331   ../Desktop  
+ 
