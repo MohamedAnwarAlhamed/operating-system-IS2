@@ -1,13 +1,73 @@
-Hassan thabet mohammed homadi 21_16_0128
-الفاصلة ليست من الأوامر (تفصل بين أمر وأمر)
-1-	mkdir d, cd d, mkdir d{1..4}, touch f1.txt, touch d4/f41, mkdir d3/d{31..33}, touch d3/d33/f331, mkdir d3/d32/d321, mkdir d3/d31/d{311..312}, mkdir d2/d21, touch d2/d21/f211.txt , mkdir d1/d{11..12}, touch d1/f11.txt, mkdir d1/d11/d{111..113}, touch d1/d11/d111/f1111.txt, touch d1/d11/d112/f1121.txt  , touch d1/d11/d113/f1131.txt  ,  mkdir d1/d12/d{121..122}, touch d1/d12/d121/f{1211..1212}.txt , 
-2-	cp d1/d11/d112/f1121  d3/d32/d321
-3-	cp d1/d11/d112/f1121  f1 
-4-	cp –r d1/d12/d121  d3/d31/d311
-5-	cp d1/d12/d121/f1212  d1/d12/d121/f1212  d2
-6-	  mv d1/d11/d111/f1111  ffff
-7-	mv d1/d12/d121/f1211  d1/d12/d121/f1211  d4
-8-	rm d1/f11
-9-	rm –rf d3
-10-	ln  d3/d33/f331  ../Desktop  , ln -s d3/d33/f331   ../Desktop  
+Done by: Youns Hamood Alkhajal
+يونس حمود مانع الخجل
+IS-2-AM Sana University 22160126
+D.r: Mohammed Anwer
+1)Create folders and files.
+answer1:
+mkdir D1
+cd D1
+mkdir D{1..4}
+touch F1
+cd D4
+touch F4
+cd../D3
+mkdir D
+cd D{31..33}
+mkdir D311 D312
+cd../D32
+mkdir D321
+cd../D33
+touch F331
+cd../../D2
+mkdir D21
+cd D21
+touch F211
+cd../../D1
+mkdir D12 D11
+touch F11
+cd D12
+mkdir D121 D122
+cd D121
+touch F1211 F1212
+cd../../D11
+mkdir D{111..113}
+cd D111
+touch F1111
+cd../D112
+touch F1121
+cd ../D113
+touch F1131
+cd ../../
+2)Copy the file F1131 To D321
+answer2:
+cp F1131../../../D3/D32/D321.
+3)Copy the F1131To file1.
+answer3:
+ cp F1131 ../../../F1.
+4)Copy folder contents D121 To D311 folder.
+answer4:
+cp cp* ../../../D3/D31/D311
+5) Copy the file F1212 and F1211 To D2 folder.
+answer5:
+cp F1211 F1212 ../../../D2
+6)Rename the file F1111 To FFFF.
+answer6:
+mv F1111 FFFF
+7)Move the files F1212 and F1211 To  D4.
+answer7:
+mv F1211 F1212../../../D4
+8)Remove the file F11.
+answer8:
+rm F11
+9)Remove folder contents D3.
+answer9:
+cd D3
+rm -rf* (Without deleting the folder D3) 
+or
+rm -rf (with delete the folder D3 )
+10) do soft and hard linking for file F331 in a desktop path.
+answer10:
+Soft linking ln -s F331 ../../../Desktop
+Hard linking ln F331 ../../../Desktop
+
  
