@@ -1,0 +1,79 @@
+Sala Al-bishary
+IS /AM
+Q1=
+mkdir D
+Cd D
+Mkdir D1 D2 D3 D4
+Touch f1.txt
+Cd D4
+Touch f41.txt
+Cd ../ D1
+Cd D3
+Mkdir D31 D32 D33
+Cd D33
+Touch f331.txt 
+Cd ../ D3
+Cd D32
+Mkdir D321
+Cd ../ D3
+Cd D31
+Mkdir D311 D312
+Cd ../../ D2
+Mkdir D21
+Cd D21
+Touch f211.txt 
+Cd ../../ D1
+Mkdir D11 D12
+Touch f11.txt
+Cd D11
+Mkdir D112 D113 D111
+Cd D111
+Touch f1111.txt
+Cd ../ D112
+Touch f1121.txt
+Cd ../ D113
+Touch f1131.txt
+Cd ../../ D12
+Mkdir D121 D122
+Cd D121
+Touch f1211.txt f1212.txt
+.................................
+Q2
+Cd D1/D11/D13
+Cp f1131  ../../../ D3/D32/D321
+......................,..............
+Q3
+cp f1131 ../../../f1
+……………………………………..
+Q4
+cd ../../D1/D12/D121
+Cp f1212 f1211 ../../../D3/D13/D311
+....................................
+Q5
+cp f1212 f1211 ../../../D2
+…………………………………..
+Q6
+cd ../../D11/D111
+mv f111 ffff
+……………………………………..
+Q7
+cd ../../D12/D121
+mv f1212 f1211  ../../../ D4
+……………………………..
+Q8
+cd ../../ D1
+rm  f11
+…………………….............
+Q9
+cd ../ D3
+rm -rf  /D3/
+ …………………………….....
+Q10
+HARD  LINKING
+In F331../../../Desktop
+SOFT LINKING
+In -s F331 ../../../Desktop 
+...................
+
+
+
