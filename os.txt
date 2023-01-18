@@ -1,19 +1,30 @@
+عمل الطالب:الرشيد محمد عبدالغفار المغبشي
+نظم معلومات (عام)22160137    
 
+Q1.
 
-1-Create folders and files.
-mkdir D/D{1..4}
-
+mkdir D
 cd D
+mkdir D1
+mkdir D2
+mkdir D3
+mkdir D4
 touch f1
 cd D1
-mkdir D11 D12
+mkdir D11
 touch F11
+mkdir D12
 cd D12 
-mkdir D121 D122
+mkdir D121
+mkdir D122
 cd D121
-touch F1212 F1211
-cd ../../D11
-mkdir D111 D112 D113
+touch F1212
+touch F1211
+cd ../d1
+cd d11
+mkdir D113
+mkdir D112
+mkdir D111
 cd D113
 touch F1131
 cd ../D112
@@ -25,7 +36,9 @@ mkdir D21
 cd D21
 touch F211
 cd ../../D3
-mkdir D{31..33}
+mkdir D31
+mkdir D32
+mkdir D33
 cd D31
 mkdir D311
 mkdir D312
@@ -35,41 +48,35 @@ cd ../D33
 touch F331
 cd ../../D4
 touch F41
- 2-Copy the file F1131 To D321.
+Q2
   cd F1131
   cp F1131 ../../../D3/D32/D321
 
- 3-Copy the F1131 To file1.
+Q3
   cp F1131 ../../../F1
 
- 4-Copy folder contents D121 To D311 folder
+ Q4
   cd D121
   cp cp * ../../../D3/D31/D311
 
- 5-Copy the file F1212 and F1211 To D2 folder
+ Q5
   cp F1211 F1212 ../../../D2
-
- 6-Rename the file F1111 To FFFF.
+Q6
   mv F1111 FFFF
 
- 7-Move the files F1212 and F1211 To D4.
+Q7
   mv F1211 F1212 ../../../D4
-
- 8- Remove the file F11.
+Q9
   rm F11
 
- 9- Remove folder contents D3.
+Q9
   cd D3
   rm -r*
   rm -rf 
- 10- Do soft and hard linking for file F331 in a desktop path.
-     Soft linking ln -s F331 ../../../Desktop
-     Hard linking ln F331 ../../../Desktop
- 
 
+Q10
+     Soft linking
+		 ln -s F331 ../../../Desktop
 
-
-عمل الطالب : عبدالله الرياني 
-نظم معلومات 
-22160133
-عام
+     Hard linking 
+		ln F331 ../../../Desktop
