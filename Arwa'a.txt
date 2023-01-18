@@ -1,0 +1,81 @@
+نظم تشغيل تكليف 1
+
+	 Arwa Mohammed AL-obari.        
+___________________________________________
+1) Create folders and files....?             
+
+mkdir D cd Dmkdir D1 D2 D3 D4
+touch f1.txt
+cd D4touch f41.txt
+cd ../ D1 cd D3mkdir 
+D31 D32 D33
+cd D33   
+touch f331.txt 
+cd ../ D3
+cd D32
+mkdir D321
+cd ../ D3
+cd D31
+mkdir D311 D312
+cd ../../ D2
+mkdir D21
+cd D21
+touch f211.txt 
+cd ../../ D1 mkdir D11 D12
+touch f11.txt
+cd D11
+mkdir D112 D113 D111
+cd D111
+touch f1111.txt
+cd ../ D112 touch f1121.txt
+cd ../ D113
+touch f1131.txt
+cd ../../ D12
+mkdir D121 D122
+cd D121 touch f1211.txt f1212.txt
+___________________________________________
+2) Copy the file F1131 To D321.?              
+      
+Cd D1/D11/D13                                   
+            
+ Cp f1131 ../../../ D3/D32/D321          
+___________________________________________
+3) Copy the F1131 To file1.?                  
+                 
+ cp f1131 ../../../f1                     
+__________________________________________
+4) Copy folder contents D121 To D311 folder.?
+
+ cd ../../D1/D12/D121 
+Cp f1212 f1211 ../../../D3/D13/D311 
+_________________________________________
+5) Copy the file F1212 andF1211 To D2  .?
+
+ cp f1212 f1211 ../../..D2                        
+__________________________________________
+
+6)Rename the file F1111 To FFFF.?            
+ 
+ cd ../../D11/D11                                   
+ mv f111 ffff                                          __________________________________________
+7) Move the files F1212 and F1211 To D4.?
+
+ cd ../../D12/D121                                     
+ 
+mv f1212 f1211 ../../..D4                        
+__________________________________________
+8) Remove the file F11.?                            
+ cd ../../ D1                                             
+ rm f11                                                  _________________________________________
+9) Remove foldercontents D3.?                
+       cd ../ D3                                            
+ rm -rf /D3/                                        ________________________________________
+10) do soft andhard linking for file F331 in a desktop path.?  
+ HARD LINKING
+In F331../../../Desktop
+SOFT LINKING
+In -s F331 ../../../Desktop ________________________________
+
+
+
+
