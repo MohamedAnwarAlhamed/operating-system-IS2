@@ -1,0 +1,73 @@
+1)
+mkdir D
+cm D
+touch D1 D2 D3 D4
+cd D1
+mkdir D12 D11
+touch f11
+cd D12
+mkdir D121 D122
+cd D121
+touch f1212 f1211
+cd ../..
+cd D11
+mkdir D113 D112 D111
+cd D113
+touch f1131
+cd ..
+cd D112
+touch f1121
+cd ..
+cd D111
+touch f1111
+cd ../..
+cd D2
+mkdir D21
+touch f211
+c ..
+cd D3
+mkdir D13 D32 D33
+cd D13
+mkdir D311 D312
+cd ..
+cd D32
+mkdir D321
+cd ..
+cd D33
+touch f331
+cd ../..
+cd D4
+touch f41
+cd ../
+touch f1
+2)
+Cd D1
+Cd D11
+Cd D113
+Cp f1131 ../../../D3/D32/D321 
+3)
+Cp f1131 .../../../f1
+4)
+Cd D121 ../../../D3/D31/D331
+5)
+Cd D1
+Cd d12
+Cd D121
+Cp f1212 f1211 ../../../D2
+6)
+Mv f1111/ffff
+7)
+Mv f1212 f1211 ../../../D4
+8)
+Cd D1
+Mv f11
+9)
+Rm -rf D3
+10)
+HARD LINEIKNG In f331 ../../../Desktop
+SOFT LINKING In -s f331 ../../../Desktop 
+
+
+
+
+ 
