@@ -1,5 +1,5 @@
 
-Q1:
+q1:
 mkdir  D
 cd  D
 mkdir  D1  D2  D3  D4
