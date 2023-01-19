@@ -1,74 +1,82 @@
-اسامة محمد  عبدالله ناصر الاسدي 22164122 
-   IS PM
-
-id card is 
-
-teach/ Mohammed Anware
-
-
-1)
- mkdir d
- cd d
- mkdir d1 d2 d3 d4
- touch f1
- cd d1
- mkdir d11 d12
- touch f11
- cd d11
- mkdir d112 d113 d111
- cd d113
-touch f1131
+Ala'a al_salemi 22164117 IS.BM
+Q1:
+mkdir  D
+cd  D
+mkdir  D1  D2  D3  D4
+touch  F1
+cd  D1
+mkdir  D11  D12
+touch  F11
+cd  D12
+mkdir  D121  D122
+touch  F1212  F1211
+cd ../..
+cd D11
+mkdir D111 D112 D113
+cd D111
+touch F1111
 cd ..
- cd d112
-touch f1121
+cd D112
+touch F1121
 cd ..
-cd d111
-touch f1111
- cd ../../
-cd d112
-mkdir d121 d122
-cd d121
-touch f1212 f1211
-cd ../../
-cd d2
-mkdir d21
-cd d21
-touch f211
-cd ../../
-cd d3
-mkdir d31 d32 d33
-cd d31
-mkdir d311 d312
+cd D113
+touch F1131
+cd ../../..
+cd D2
+mkdir D21
+cd D21 
+touch F211
+cd ../..
+cd D3
+mkdir D31 D32 D33
+cd D31
+mkdir D311 D312
 cd ..
-cd d32
-mkdir d321
+cd D32
+mkdir D321
 cd ..
-cd d33
-touch f331
-cd ../../
-cd d4
-touch f41
+cd D33
+touch F331
+cd ../..
+cd D4
+touch F41
+cd ..
 
-   # the quesation one is done
+Q2:
+cd D1/D11/D113
+cp F1131 ../../../D2/D32/D321
 
-2) cp f1131 ../../../d3/d32/d321
+Q3:
+cp F1131 ../../../F1
 
-3) cp f1131 ../../../f1
+Q4:
+cd ../..
+cd D12
+cp –r D121 ../../D3/D31/D311
 
-4) cp * ../../../d3/d31/d311
+Q5:
+cd D121
+cp F1212 F1211 ../../../D2
+Q6:
+cd  ../..
+cd D11 D111
+mv F1111 FFFF
 
-5) cp f1212 f1211 ../../../d2
+Q7:
+cd D12/D121
+mv F1211 F1212 ../../../D4/
 
-6) mv f1111 ffff
+Q8:
+cd ../..
+rm F11
 
-7) mv f1211 f1212 ../../../d4
+Q9:
+cd ..
+rm _rf D3
 
-8) rm f11
-
-9) rm -r *
-
-10) In f331 ../../../Desktop     In -s f331 ../../../Desktop
-
-
-     ( my H.W is done)
- 
+Q10:
+Q10:
+Cd ~ 
+cd D/D3/D33
+Ln F331 ../../../Desktop/Filelink
+Ln –s F331 ../../../Desktop/Filelink2
