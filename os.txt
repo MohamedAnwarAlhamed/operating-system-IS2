@@ -1,0 +1,73 @@
+Montaha 
+Question 1 
+mkdir D 
+mkdir D/D1
+mkdir D/D2 
+mkdir D/D3
+mkdir D/D4
+touch D/F1.txt
+cd D 
+cd D1 
+mkdir -p D12/D121
+mkdir -p D12/D122
+touch D12/D121/F1212.txt 
+touch D12/D121/F1211.txt
+touch F11.txt 
+mkdir -p D11/D113
+mkdir -p D11/D112
+mkdir -p D11/D111
+touch D11/D113/F1131.txt
+touch D11/D112/F1121.txt
+touch D11/D111/F1111.txt
+cd ..
+cd D2
+mkdir D21
+touch D21/F211.txt 
+cd .. 
+cd D3
+mkdir -p D31/D311
+mkdir -p D31/D312
+mkdir -p D32/D321
+mkdir D33
+touch D33/F331.txt
+cd.. 
+cd D4
+touch F41.txt
+
+Question 2 
+cp F1131.txt ../../../D3/D32/D321
+
+Question 3 
+cd D1/D11/D113
+touch file1 
+cp F1131.txt file1
+
+Question 4
+cd ../../
+cd D12/D121
+cp F1211.txt F1212.txt ../../../D3/D31/D311
+
+Question 5 
+cp F1211.txt F1212.txt ../../../D2
+
+Question 6
+mv F1111.txt FFFF.txt
+
+Qusetion 7 
+mv F1211.txt F1212.txt ../../../D4 
+
+Question 8 
+cd ~
+cd D/D1
+rm F11.txt
+
+Question 9 
+cd ~ 
+cd D/D3
+rm -rf D31
+rm -rf D32
+rm -rf D33
+
+Question 10
+Ln F331 ../../../Desktop
+Ln -s F331 ../../../Desktop
