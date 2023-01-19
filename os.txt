@@ -1,91 +1,82 @@
-
-					      الاسم: محمد محسن عبدالله زيد			         (IS , PM , G2)     
-
-22164138					 
-The answer of Questions
-
- {1} Create folders and files ? 
-
-     mkdir D
-cd D/
-     mkdir D1 D2 D3 D4 
-      touch F1
+1-Create folders and files.
+mkdir D
+cd D
+mkdir D{1..4}
+touch f1
 cd D1
-mkdir D12 D11
+mkdir D11
 touch F11
-     cd D12/
-mkdir D121 D122
-cd D121/
-touch F1212 F1211
+mkdir D12
+cd D12 
+mkdir D121
+mkdir D122
+cd D121
+touch F1212
+touch F1211
 cd ../../D11
-     mkdir D111 D112 D113
-     cd D111/
-     touch F1111
-     cd ../D112
-   touch F1121
-cd ../D113
-     touch F1131
-     cd ../../../D2
+mkdir D113
+mkdir D112
+mkdir D111
+cd D113
+touch F1131
+cd ../D112
+touch F1121
+cd ../D111
+touch F1111
+cd ../../../D2
 mkdir D21
-cd D21/
-     touch F211
-     cd  ../../D3
-     mkdir D31 D32 D33
-    cd D31/
-mkdir D311 D312
+cd D21
+touch F211
+cd ../../D3
+mkdir D{31..33}
+cd D31
+mkdir D311
+mkdir D312
 cd ../D32
-     mkdir D321
-     cd  ../D3
-      touch F331
-      cd  ../../D4
-    touch F41
-.. cd 
-               { the end command to return to (D) Directory }
+mkdir D321
+cd ../D33
+touch F331
+cd ../../D4
+touch F41
+ 2-Copy the file F1131 To D321.
+  cd F1131
+  cp F1131 ../../../D3/D32/D321
 
 
-  {2} Copy the file F1131 To D321 
+ 3-Copy the F1131 To file1.
+  cp F1131 ../../../F1
 
-       cd D1/D11/D113
-       cp F1131 ../../../D3/D32/D321
 
- {3} Copy the F1131 To file1 
+ 4-Copy folder contents D121 To D311 folder.
+  cd D121
+  cp cp * ../../../D3/D31/D311
 
-        cp F1131 ../../../F1
-       .. cd 
 
-Copy folder contents D121 To D311 folder ? {4}
+ 5-Copy the file F1212 and F1211 To D2 folder.
+  cp F1211 F1212 ../../../D2
 
-	cd D1/D12/D121
-	cp F1212 F1211 ../../../D3/D31/D311
 
-		
-Copy the file F1212 and F1211 To D2 folder ? {5}
-	cp F1212 F1211 ../../../D2
-	cd .. 
-	
-? Rename the file F1111 To FFFF {6}
-	cd D1/D11/D111
-	mv F1111 FFFF
- 
- ? Move the files F1212 and F1211 To D4 {7}
-	cd ../../D12/D121
-	mv F1212 F1211 ../../../D4  
+ 6-Rename the file F1111 To FFFF.
+  mv F1111 FFFF
 
-? Remove the file F11 {8}
-	cd ../..  
-	rm F11
 
-? Remove folder contents D3 {9}
-	cd ../D3
-	rm -r *
+ 7-Move the files F1212 and F1211 To D4.
+  mv F1211 F1212 ../../../D4
 
-? do soft and hard linking for file F331 in a desktop path {10}
-	mkdir D33 
-	cd D33/
-	touch F331 F332 F333
-	cd ../../.. 
-	cd Desktop
-	
-	ln -s ~/D/D3/D33/F331 F332        (this soft linking)
-	
-	ln ~/D/D3/D33/F331 F333            (this hard linking)
+
+ 8- Remove the file F11.
+  rm F11
+
+
+ 9- Remove folder contents D3.
+  cd D3
+  rm -r*
+  rm -rf 
+
+
+ 10- Do soft and hard linking for file F331 in a desktop path.
+         Soft linking ln -s F331 ../../../Desktop
+         Hard linking ln F331 ../../../Desktop
+Done by :Osama alkabos 
+IS.AM G2 
+22160120
