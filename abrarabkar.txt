@@ -1,0 +1,85 @@
+Q1
+mkdir D
+cd D
+mkdir D1
+mkdir D2
+mkdir D3
+mkdir D4
+touch F1.txt
+cd D4
+touch F41.txt
+cd ../D3
+mkdir D31
+mkdir D32
+mkdir D33
+cd D31
+mkdir D311
+mkdir D312
+cd ../D32
+mkdir D321
+cd ../D33
+touch F331.txt
+cd ../../D2
+mkdir D21
+cd D21
+touch F211.txt
+cd ../../D1
+mkdir D12
+mkdir D11
+touch F11.txt
+cd D12
+mkdir D121
+mkdir D122
+cd D121
+touch F1212.txt F1211.txt
+cd ../../D11
+mkdir D111
+mkdir D112
+mkdir D113
+cd D113
+touch F1131.txt 
+cd ../D112
+touch F1121.txt
+cd ../D111
+touch F1111.txt
+cd ~
+______________________________________
+Q2
+cd D/D1/D11/D113
+cp F1131 ../../../D3/D32/D321
+_________________
+Q3
+cp F1131 File1
+________________________
+Q4
+cd ~
+cp -r D/D1/D12/D121/ D/D3/D31/D311
+___________________________________
+Q5
+cd D/D1/D12/D121
+cp F1212 F1211  ../../../D2
+______________________________________
+Q6
+cd ../../D11/D111
+mv F1111 FFFF
+_______________________________
+Q7
+cd~
+cd D/D1/D12/D121
+mv F1212 F1211 ../../../D4
+_________________________
+Q8
+cd ../../
+rm F11
+_______________________________
+Q9
+cd~
+rmdir D/D3
+______________________________
+Q10
+HARD:
+cd D33
+ln F331 ../../../Desktop
+
+SOFT:
+ln  -s F331 ../../../Desktop
