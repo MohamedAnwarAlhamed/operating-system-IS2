@@ -1,0 +1,65 @@
+name : taghreed saleh mahdi tamesh
+specialization :informatoin system 
+recovery number : 26
+1) mkdir D
+cd d
+ {1..4}mkdir
+
+touch f1
+cd D1
+mkdir D11
+touch f11
+mkdir D12
+cd D12
+mkdir D121
+mkdir 122
+cd121
+touch f1212
+touch 1211
+cd ../..D11
+mkdir D113
+mkdir d112
+mkdir d111
+cd d113
+touch f1131
+cd../d112
+touch f1111
+cd ../../d2
+mkdir d21
+cd d21
+touch f211
+cd../..d3
+
+{31..33}mkdir D
+cd 31
+mkdir d311
+mkdir 312
+cd ../d32
+mkdir d321
+cd ../d33
+touch f331
+cd ../..d4
+touch f41
+2)cd f1131
+cp f1131 ../../../d3/d32/d321
+
+3) cp f1131 ../../../f1
+
+4) cd 121
+cp * ../../d3/d31/d311
+
+5) cp f1212 f1211 ../../d2
+
+6) mv f1111 ffff
+
+7) mv f1212 f1211 ../../../d4
+
+8) rm f11
+
+9)  cd d3
+*rm-r
+
+10)ln -s f331 ../../../desktop
+ln f331 f331 ../../../desktop
+
+	
