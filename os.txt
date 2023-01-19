@@ -1,4 +1,4 @@
-Abdullah almahfadi 22164118
+Ahmed riyadh abo al-ariki 22160164
 Q1:
 mkdir  D
 cd  D
