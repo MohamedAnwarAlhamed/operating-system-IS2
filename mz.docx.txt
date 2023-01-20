@@ -1,0 +1,104 @@
+
+/////////////////////////////////////////////////////////////NAME:HAMZAH MOHAMMED HAMZAH ALQATA.///////////////////////////////////////////////////////////
+
+{1} Create folders and files ?
+
+     (1)  mkdir D
+     (2)  cd D/
+     (3)  mkdir D1 D2 D3 D4 
+     (4)  touch F1
+     (5)  cd D1/
+     (6)  mkdir D12 D11
+     (7)  touch F11
+     (8)  cd D12/
+     (9)  mkdir D121 D122
+     (10) cd D121/
+     (11) touch F1212 F1211
+     (12) cd ../../D11
+     (13) mkdir D111 D112 D113
+     (14) cd D111/
+     (15) touch F1111
+     (16)  cd ../D112
+     (17) touch F1121
+     (18) cd ../D113
+     (19) touch F1131
+     (20) cd ../../../D2
+     (21) mkdir D21
+     (22) cd D21/
+     (23) touch F211
+     (24) cd ../../D3
+     (25) mkdir D31 D32 D33
+     (26) cd D31/
+     (27) mkdir D311 D312
+     (28) cd ../D32/
+     (29) mkdir D321
+     (30) cd ../D33/
+     (31) touch F331
+     (32) cd ../../D4/
+     (33) touch F41
+     (34) cd ..
+               { the end command to return to (D) Directory }
+
+
+ {2} Copy the file F1131 To D321 ? 
+
+       cd D1/D11/D113
+       cp F1131 ../../../D3/D32/D321
+
+ {3} Copy the F1131 To file1 ?
+
+        cp F1131 ../../../F1
+        cd ..
+
+ {4} Copy folder contents D121 To D311 folder ?
+
+	cd D1/D12/D121
+	cp F1212 F1211 ../../../D3/D31/D311
+
+		
+ {5} Copy the file F1212 and F1211 To D2 folder ?
+
+	cp F1212 F1211 ../../../D2
+	cd ..
+	
+ {6} Rename the file F1111 To FFFF ?
+
+	cd D1/D11/D111
+	mv F1111 FFFF
+ 
+ {7} Move the files F1212 and F1211 To D4 ?
+
+	cd ../../D12/D121
+	mv F1212 F1211 ../../../D4  
+
+ {8} Rmove the file F11 ?
+
+	cd ../..
+	rm F11
+
+ {9} Remove folder contents D3 ?
+
+	cd ../D3
+	rm -r *
+
+{10} do soft and hard linking for file F331 in a desktop path ?  
+
+	mkdir D33 
+	cd D33/
+	touch F331 F332 F333
+	cd ../../../
+	cd Desktop
+	
+	ln -s ~/D/D3/D33/F331 F332        (this soft linking)
+	
+	ln ~/D/D3/D33/F331 F333		  (this hard linking)
+	
+		
+
+
+
+
+
+Name: HAMZAH MOHAMMED HAMZAH ALQATA.
+IS2-PM.
+   
