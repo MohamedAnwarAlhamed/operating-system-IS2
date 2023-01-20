@@ -86,6 +86,7 @@
 	ln ~/D/D3/D33/F331 F333            ( hard linking)
 
 
-Name: Abdulrahman Ali ALjalili .            IS pm(G2)
+Name: Abdulrahman Ali ALjalili .            IS pm(G2).
 Email: abdulrahmanaljalili@gmail.com
+
 
