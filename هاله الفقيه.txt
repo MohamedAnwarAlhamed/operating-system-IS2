@@ -1,0 +1,103 @@
+الاسم : هاله الفقيه 
+الماده : نظم تشغيل عملي 
+التخصص : IS2.AM 
+رقم القيد : 93 
+1)create folders and files ?
+Mkdir D
+Cd D 
+Mkdir d1 d2 d3 d4 
+Cd d1 
+Mkdir d12 d11
+Touch f11
+Cd d12
+Mkdir d121 d122
+Cd d121
+Touch f1212 f1211
+~/d /d1/d12/d121$ cd  ../..
+~/d/d1$ cd d11
+~/d/d1/d11$  mkdir  d113  d112  d111
+~/d/d1/d11$   cd d113 
+~/d/d1/d11/d113$   touch f1131 
+~/d/d1/d11/d113$   cd  .. 
+~/d/d1/d11$ cd d112 
+~/d/d1/d11/d112$  touch f1121
+~/d/d1/d11/d112$   cd . . 
+~/d/d1/d11$ cd d1111
+~/d/d1/d11/  d1111$   touch  f1111 
+~/d/d1/d11/  d1111$   cd . . / . . 
+~/d/d1$ cd 
+~/d$ cd d2 
+~/d/d2$  mkdir d21
+~/d/d2$   touch f211
+~/d/d2$   cd 
+~/d$ cd d3 
+~/d/d3$  mkdir  d13 d23 d33
+~/d/d3$   cd d13 
+~/d/d3/d13$ mkdir d311 d312 
+~/d/d3/d13$  cd . .
+~/d/d3$  cd d23
+~/d/d3/d23$ mkdir d321
+~/d/d3/d23$ cd . . 
+~/d/d3$   cd d33 
+~/d/d3/d33$  touch f331
+~/d/d3/d33$  cd . . / . . 
+~/d$  cd d4 
+~/d/d4$  touch f41 
+~/d/d4$    cd   . . / . . 
+~/d$ touch f1  
+
+2)copy the file f1131 to d321?
+Cd D 
+Cd D1 
+Cd D111
+Cd D113 
+Cp f113 /. . / . . / .  . / D3/D33/D32/
+
+3)copy the f1131 to file 1 ?
+CP F113/ . . / . . / . . / d3/d32/d321 
+ 
+4)copy folder contents d121 to d311 folder?
+Cp -r d121 . . / . . /d3 /d31 d311/
+
+5)copy the file f1212 and f1211 to d2 folder ?
+Cp f1212 f1211 . . / . . /. . /d2
+
+6)rename the file f1111 to ffff?
+Mv  f1111 ffff 
+
+7)move the file f1212 and f1211 to d4 ?
+Mv f1212 f1211 . . / . . /d4
+
+8) rename the file f11?
+Mv f11
+
+9)remove folder contents d3 ?
+Rm -rf d3 
+
+10) do soft and hard linking for f331 in a desktop path ?
+HARD LINKING 
+In f331 . . / . . /desktop 
+SOFT LINKING 
+In -s f331 . . / . . /desktop 
+
+ 
+
+ 
+ 
+
+
+ 
+ 
+
+  
+
+
+ 
+
+
+
+ 
+
+
+
+
